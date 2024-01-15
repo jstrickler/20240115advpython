@@ -1,0 +1,14 @@
+ipython
+iPywidgets
+jupyter
+jupyterlab
+lxml
+matplotlib
+numpy
+openpyxl
+pandas
+pdfkit
+pylint
+PyYAML
+scipy
+seaborn
