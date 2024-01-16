@@ -31,6 +31,8 @@ print()
 amount = .325482039
 print(f"amount: {amount}")
 print(f"amount: {amount:.2f}")  # round to 2 decimal places
+print("amount: {:.2f}".format(amount))  # round to 2 decimal places
+
 print(f"amount: {amount:.2%}")  # convert to percent
 print()
 

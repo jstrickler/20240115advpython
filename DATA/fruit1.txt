@@ -16,6 +16,7 @@ apple
 tangerine
 cantelope
 cherry
+loquat
 apple
 apple
 plum

@@ -7,7 +7,7 @@ mary_in.close()  # close file (easy to forget to do this!)
 
 with open(FILE_NAME) as mary_in:  # open file for reading
     for raw_line in mary_in:  # iterate over lines in file (line retains \n)
-        line = raw_line.rstrip()  # rstrip('') removes whitespace (including \n or \r ) from end of string
+        line = raw_line.rstrip()  # rstrip() removes whitespace (including \n or \r ) from end of string
         print(line)
 print('-' * 60)
 
@@ -28,3 +28,14 @@ print('-' * 60)
 with open(FILE_NAME) as mary_in:
     lines_without_nl = mary_in.read().splitlines()  # splitlines() splits string on ' ' into lines
     print(lines_without_nl)
+
+s_count = 0
+with open('../DATA/breakfast.txt') as breakfast_in:
+    for raw_line in breakfast_in:
+        if raw_line.startswith('s'):
+            s_count += 1
+            line = raw_line.rstrip()
+            print(line)
+
+print(f"{s_count} lines start with s")
+

@@ -13,7 +13,7 @@ b = 456    # int
 # result = b + a
 # print(result)
 
-
+x = None   # null value
 
 
 
