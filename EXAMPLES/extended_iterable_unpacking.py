@@ -12,15 +12,15 @@ print(f"x: {x}    y: {y}    z: {z}\n")
 
 people = [
     ('Bill', 'Gates', 'Microsoft'),
-    ('Steve', 'Jobs', 'Apple'),
+    ('Steve', 'Jobs', 'Apple', 'NeXT'),
     ('Paul', 'Allen', 'Microsoft'),
     ('Larry', 'Ellison', 'Oracle'),
-    ('Mark', 'Zuckerberg', 'Facebook'),
+    ('Mark', 'Zuckerberg', 'Facebook', 'Thing1', 'Thing2'),
     ('Sergey', 'Brin', 'Google'),
     ('Larry', 'Page', 'Google'),
-    ('Linux', 'Torvalds', 'Linux'),
+    ('Linux', 'Torvalds', 'Linux', 'Git'),
 ]
 
-for *name, _ in people:  # name gets all but the last field
-    print(name)
+for first_name, last_name, *_ in people:  # name gets all but the last field
+    print(first_name, last_name)
 print()

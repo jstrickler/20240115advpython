@@ -28,3 +28,4 @@ print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])  # select column 'gamma'
+print(df['gamma'].mean())

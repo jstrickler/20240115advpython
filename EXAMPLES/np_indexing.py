@@ -15,7 +15,10 @@ print()
 print('a[0] =>', a[0])  # first row
 print('a[0][0] =>', a[0][0])  # first element of first row
 print('a[0,0] =>', a[0,0])  # same, but numpy style
-print('a[0,:3] =>', a[0,:3])  # first 3 elements of first row
+
+#   ARRAY[row-index-or-slice, col-index-or-slice]
+
+print('a[0,:3] =>', a[0,0:3])  # first 3 elements of first row
 print()
 
 print('a[:,:2] =>\n', a[:,:2])  # first 2 columns

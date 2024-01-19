@@ -1,6 +1,6 @@
 import sys
 import numpy as np
-data = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [20, 30, 40]]
+data = [[1, 2, 3], [4, 5., 6], [7, 8, 9], [20, 30, 40]]
 
 a = np.array(data)  # create array from nested sequences
 print(a, '\n')
@@ -27,6 +27,6 @@ print(a_empty)
 
 print(a.dtype)  # defaults to float64
 
-nan_array = np.full((5, 10), np.NaN)  # create array of NaN values
+nan_array = np.full((5, 10), np.NAN)  # create array of NaN values
 print(nan_array)
 

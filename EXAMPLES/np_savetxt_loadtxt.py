@@ -17,7 +17,7 @@ np.savetxt(float_file_name, sample_data, delimiter=",", fmt="%5.2f")  # Write da
 
 int_file_name = 'save_data_int.txt'
 
-np.savetxt(int_file_name, sample_data, delimiter=",", fmt="%d")  # Write data to text file as ints, using commas as delimiter
+np.savetxt(int_file_name, sample_data, delimiter="#", fmt="%3d")  # Write data to text file as ints, using commas as delimiter
 
 data = np.loadtxt(float_file_name, delimiter=",")  # Read data back into ndarray
 print(data)

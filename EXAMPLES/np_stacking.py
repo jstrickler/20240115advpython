@@ -14,7 +14,7 @@ print('a =>\n', a)
 print()
 print('b =>\n', b)
 print()
-print('vstack((a,b)) =>\n', np.vstack((a, b)))  # stack arrays vertically (like pancakes)
+print('vstack((a,b)) =>\n', np.vstack([a, b]))  # stack arrays vertically (like pancakes)
 print()
 
 print('vstack((a,a[0] + a[1])) =>\n', np.vstack((a, a[0] + a[1])))  # add a row with sums of first two rows

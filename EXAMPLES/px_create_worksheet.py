@@ -23,4 +23,10 @@ for fruit in fruits:
 #     ws.cell(row=i, column=1).value = fruit
 #     ws.cell(row=i, column=2).value = len(fruit)
 
+for i in range(5):
+    ws = wb.create_sheet()
+    ws.title = f"Worksheet{i}"
+
 wb.save('fruits.xlsx')
+
+

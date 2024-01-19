@@ -1,6 +1,9 @@
 
 set1 = {'red', 'blue', 'green', 'purple', 'green'}  # create literal set
 set2 = {'green', 'blue', 'yellow', 'orange'}
+set3 = set()
+names = ['Lloyd', 'Thomas', 'Paul']
+set4 = set(names)
 
 set1.add('taupe')  # add element to set (ignored if already in set)
 

@@ -1,3 +1,6 @@
+"""
+Tool to add age at inauguration to the presdents worksheet
+"""
 from datetime import date
 import openpyxl as px
 
@@ -17,8 +20,8 @@ def make_date(date_str):
     if not isinstance(date_str, date):
         year, month, day = date_str.split('-')
         return date(int(year), int(month), int(day))
-    else:
-        return date_str
+
+    return date_str
 
 def add_age_at_inauguration(ws):
     """Add a new column with age of inauguration"""

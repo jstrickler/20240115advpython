@@ -17,9 +17,9 @@ def main():
 
 def add_border_to_state_column(ws):
     """Add a border around cells for the State column"""
-    for row in ws['G2:G47']:
+    for row in ws['G1:G47']:
         cell = row[0]
-        side = Side(style='thin')
+        side = Side(style='thick')
         border = Border(
             left=side,
             right=side,
@@ -29,7 +29,7 @@ def add_border_to_state_column(ws):
         cell.border = border
 
 def add_background_to_parties(ws):
-    for row in ws['J2:J47']:
+    for row in ws['J1:J47']:
         cell = row[0]
         blue_bg = Color(rgb='006666FF', tint=.6)
         fill = PatternFill(
@@ -43,7 +43,7 @@ def update_last_names(ws):
     for row in ws['B2:B47']:
         cell = row[0]
         cell.value = cell.value.upper()
-        cell.font = Font(color='FF0000FF', name="Comic Sans", size=22)
+        cell.font = Font(color='FF0000FF', name="Comic Sans", size=10)
 
 if __name__ == '__main__':
     main()

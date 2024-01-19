@@ -13,6 +13,9 @@ s2 = pd.Series(data)  # create series with auto-generated index (0, 1, 2, 3, ...
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+print(f"{s1['a'] = }")
+
+
 print("selecting elements")
 print(s1[['h', 'b']], "\n")  # select items from series
 

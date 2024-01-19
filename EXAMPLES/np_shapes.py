@@ -19,8 +19,12 @@ a1.shape = 3, -1  # reshape back to 3x5, let numpy calculate other dimension
 print(a1)
 print()
 
-print(a1.flatten())  # print array as 1D
+print("flatten", a1.flatten())  # print array as 1D
 print()
+
+print("ravel", a1.ravel())  # print array as 1D
+print()
+
 
 print(a1.transpose())  # print transposed array
 print("------------------")
